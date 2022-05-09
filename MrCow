@@ -1,0 +1,624 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Aura = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Respawn = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Credits = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AuraTab = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local PurpleLightning = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local PurpleFists = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local GreenFists = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local BlueAura = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local GreenPurpFists = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local RespawnTab = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local H = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local sf = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local fo = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local MiscTab = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local NoVoid = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local AutoC = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local CreditsTab = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local MrCowsGui = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+MainFrame.Position = UDim2.new(0.316471368, 0, 0.370760202, 0)
+MainFrame.Size = UDim2.new(0, 621, 0, 266)
+
+Aura.Name = "Aura"
+Aura.Parent = MainFrame
+Aura.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Aura.Size = UDim2.new(0, 200, 0, 50)
+Aura.Font = Enum.Font.Highway
+Aura.Text = "Aura"
+Aura.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aura.TextSize = 43.000
+
+UICorner.CornerRadius = UDim.new(0, 35)
+UICorner.Parent = Aura
+
+UICorner_2.Parent = MainFrame
+
+Respawn.Name = "Respawn"
+Respawn.Parent = MainFrame
+Respawn.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Respawn.Position = UDim2.new(0, 0, 0.242320821, 0)
+Respawn.Size = UDim2.new(0, 200, 0, 50)
+Respawn.Font = Enum.Font.Highway
+Respawn.Text = "Respawn"
+Respawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Respawn.TextSize = 43.000
+
+UICorner_3.CornerRadius = UDim.new(0, 35)
+UICorner_3.Parent = Respawn
+
+Misc.Name = "Misc"
+Misc.Parent = MainFrame
+Misc.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Misc.Position = UDim2.new(0, 0, 0.48122865, 0)
+Misc.Size = UDim2.new(0, 200, 0, 50)
+Misc.Font = Enum.Font.Highway
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextSize = 43.000
+
+UICorner_4.CornerRadius = UDim.new(0, 35)
+UICorner_4.Parent = Misc
+
+Credits.Name = "Credits"
+Credits.Parent = MainFrame
+Credits.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Credits.Position = UDim2.new(0, 0, 0.748825967, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.Highway
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 43.000
+
+UICorner_5.CornerRadius = UDim.new(0, 35)
+UICorner_5.Parent = Credits
+
+AuraTab.Name = "AuraTab"
+AuraTab.Parent = MainFrame
+AuraTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AuraTab.BackgroundTransparency = 1.000
+AuraTab.Position = UDim2.new(0.322061092, 0, 0, 0)
+AuraTab.Size = UDim2.new(0, 420, 0, 266)
+AuraTab.Visible = false
+
+UICorner_6.Parent = AuraTab
+
+PurpleLightning.Name = "Purple Lightning"
+PurpleLightning.Parent = AuraTab
+PurpleLightning.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+PurpleLightning.Position = UDim2.new(0.15476191, 0, 0, 0)
+PurpleLightning.Size = UDim2.new(0, 173, 0, 42)
+PurpleLightning.Font = Enum.Font.Highway
+PurpleLightning.Text = "Purple Lightning"
+PurpleLightning.TextColor3 = Color3.fromRGB(255, 255, 255)
+PurpleLightning.TextScaled = true
+PurpleLightning.TextSize = 25.000
+PurpleLightning.TextWrapped = true
+
+UICorner_7.Parent = PurpleLightning
+
+PurpleFists.Name = "Purple Fists"
+PurpleFists.Parent = AuraTab
+PurpleFists.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+PurpleFists.Position = UDim2.new(0.15476191, 0, 0.24060151, 0)
+PurpleFists.Size = UDim2.new(0, 173, 0, 42)
+PurpleFists.Font = Enum.Font.Highway
+PurpleFists.Text = "Purple Fists"
+PurpleFists.TextColor3 = Color3.fromRGB(255, 255, 255)
+PurpleFists.TextSize = 33.000
+PurpleFists.TextWrapped = true
+
+UICorner_8.Parent = PurpleFists
+
+GreenFists.Name = "Green Fists"
+GreenFists.Parent = AuraTab
+GreenFists.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+GreenFists.Position = UDim2.new(0.15476191, 0, 0.48120302, 0)
+GreenFists.Size = UDim2.new(0, 173, 0, 42)
+GreenFists.Font = Enum.Font.Highway
+GreenFists.Text = "Green Fists"
+GreenFists.TextColor3 = Color3.fromRGB(255, 255, 255)
+GreenFists.TextSize = 33.000
+GreenFists.TextWrapped = true
+
+UICorner_9.Parent = GreenFists
+
+BlueAura.Name = "Blue Aura"
+BlueAura.Parent = AuraTab
+BlueAura.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+BlueAura.Position = UDim2.new(0.15476191, 0, 0.748120308, 0)
+BlueAura.Size = UDim2.new(0, 173, 0, 42)
+BlueAura.Font = Enum.Font.Highway
+BlueAura.Text = "Blue Aura"
+BlueAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+BlueAura.TextSize = 31.000
+BlueAura.TextWrapped = true
+
+UICorner_10.Parent = BlueAura
+
+GreenPurpFists.Name = "Green Purp Fists"
+GreenPurpFists.Parent = AuraTab
+GreenPurpFists.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+GreenPurpFists.Position = UDim2.new(0.590476215, 0, 0.36090225, 0)
+GreenPurpFists.Size = UDim2.new(0, 173, 0, 42)
+GreenPurpFists.Font = Enum.Font.Highway
+GreenPurpFists.Text = "Green Purp Fists"
+GreenPurpFists.TextColor3 = Color3.fromRGB(255, 255, 255)
+GreenPurpFists.TextSize = 27.000
+GreenPurpFists.TextWrapped = true
+
+UICorner_11.Parent = GreenPurpFists
+
+RespawnTab.Name = "RespawnTab"
+RespawnTab.Parent = MainFrame
+RespawnTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RespawnTab.BackgroundTransparency = 1.000
+RespawnTab.Position = UDim2.new(0.322061092, 0, 0, 0)
+RespawnTab.Size = UDim2.new(0, 420, 0, 266)
+RespawnTab.Visible = false
+
+UICorner_12.Parent = RespawnTab
+
+H.Name = "H"
+H.Parent = RespawnTab
+H.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+H.Position = UDim2.new(0.221428573, 0, 0.093984969, 0)
+H.Size = UDim2.new(0, 213, 0, 57)
+H.Font = Enum.Font.Highway
+H.Text = "100%"
+H.TextColor3 = Color3.fromRGB(255, 255, 255)
+H.TextSize = 41.000
+
+UICorner_13.Parent = H
+
+sf.Name = "sf"
+sf.Parent = RespawnTab
+sf.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+sf.Position = UDim2.new(0.221428573, 0, 0.390977442, 0)
+sf.Size = UDim2.new(0, 213, 0, 57)
+sf.Font = Enum.Font.Highway
+sf.Text = "75%"
+sf.TextColor3 = Color3.fromRGB(255, 255, 255)
+sf.TextSize = 41.000
+
+UICorner_14.Parent = sf
+
+fo.Name = "fo"
+fo.Parent = RespawnTab
+fo.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+fo.Position = UDim2.new(0.221428573, 0, 0.7218045, 0)
+fo.Size = UDim2.new(0, 213, 0, 57)
+fo.Font = Enum.Font.Highway
+fo.Text = "50%"
+fo.TextColor3 = Color3.fromRGB(255, 255, 255)
+fo.TextSize = 41.000
+
+UICorner_15.Parent = fo
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = MainFrame
+MiscTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscTab.BackgroundTransparency = 1.000
+MiscTab.Position = UDim2.new(0.322061181, 0, 0, 0)
+MiscTab.Size = UDim2.new(0, 420, 0, 266)
+MiscTab.Visible = false
+
+UICorner_16.Parent = MiscTab
+
+NoVoid.Name = "NoVoid"
+NoVoid.Parent = MiscTab
+NoVoid.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+NoVoid.Position = UDim2.new(0.107142866, 0, 0.10150376, 0)
+NoVoid.Size = UDim2.new(0, 200, 0, 50)
+NoVoid.Font = Enum.Font.Highway
+NoVoid.Text = "NoVoid"
+NoVoid.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoVoid.TextSize = 38.000
+
+UICorner_17.Parent = NoVoid
+
+AutoC.Name = "Auto C"
+AutoC.Parent = MiscTab
+AutoC.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+AutoC.Position = UDim2.new(0.107142866, 0, 0.406015038, 0)
+AutoC.Size = UDim2.new(0, 200, 0, 50)
+AutoC.Font = Enum.Font.Highway
+AutoC.Text = "Auto C"
+AutoC.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoC.TextSize = 38.000
+
+UICorner_18.Parent = AutoC
+
+CreditsTab.Name = "CreditsTab"
+CreditsTab.Parent = MainFrame
+CreditsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsTab.BackgroundTransparency = 1.000
+CreditsTab.Position = UDim2.new(0.322061181, 0, 0, 0)
+CreditsTab.Size = UDim2.new(0, 420, 0, 266)
+CreditsTab.Visible = false
+
+UICorner_19.Parent = CreditsTab
+
+MrCowsGui.Name = "MrCow's Gui"
+MrCowsGui.Parent = CreditsTab
+MrCowsGui.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+MrCowsGui.Position = UDim2.new(0.233333319, 0, 0.187969923, 0)
+MrCowsGui.Size = UDim2.new(0, 200, 0, 143)
+MrCowsGui.Font = Enum.Font.Highway
+MrCowsGui.Text = "MrCow's Gui"
+MrCowsGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+MrCowsGui.TextSize = 38.000
+
+UICorner_20.Parent = MrCowsGui
+
+-- Scripts:
+
+local function SYNVIMI_fake_script() -- Aura.LocalScript 
+	local script = Instance.new('LocalScript', Aura)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AuraTab.Visible = true
+		script.Parent.Parent.RespawnTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.CreditsTab.Visible = false
+	end)
+end
+coroutine.wrap(SYNVIMI_fake_script)()
+local function ROTUG_fake_script() -- Respawn.LocalScript 
+	local script = Instance.new('LocalScript', Respawn)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AuraTab.Visible = false
+		script.Parent.Parent.RespawnTab.Visible = true
+		script.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.CreditsTab.Visible = false
+	end)
+end
+coroutine.wrap(ROTUG_fake_script)()
+local function BECZNMZ_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AuraTab.Visible = false
+		script.Parent.Parent.RespawnTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = true
+		script.Parent.Parent.CreditsTab.Visible = false
+	end)
+	
+end
+coroutine.wrap(BECZNMZ_fake_script)()
+local function PNLP_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AuraTab.Visible = false
+		script.Parent.Parent.RespawnTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.CreditsTab.Visible = true
+	end)
+end
+coroutine.wrap(PNLP_fake_script)()
+local function QFIDQIV_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(QFIDQIV_fake_script)()
+
+PurpleLightning.MouseButton1Click:Connect(function()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura3:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura3:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura1:destroy()
+end)
+
+PurpleFists.MouseButton1Click:Connect(function()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura2:destroy()
+end)
+
+GreenFists.MouseButton1Click:Connect(function()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura2:destroy()
+end)
+
+BlueAura.MouseButton1Click:Connect(function()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura3:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura3:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura2:destroy()
+end)
+
+GreenPurpFists.MouseButton1Click:Connect(function()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura2:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftHand.Aura3:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightHand.Aura3:destroy()
+	game:GetService("Workspace").thecowisamazing123.RightUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.LeftUpperLeg.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura1:destroy()
+	game:GetService("Workspace").thecowisamazing123.UpperTorso.Aura2:destroy()
+end)
+
+NoVoid.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.RightHand:Remove()
+end)
+
+AutoC.MouseButton1Click:Connect(function()
+	_G.Spam = true
+
+	while _G.Spam == true do wait()
+		wait(0)
+		local Remote = game.ReplicatedStorage['RemoteEvent']
+
+		local Arguments = {
+			[1] = {
+				[1] = "Skill_Punch",
+				[2] = "Right",
+				[3] = Vector3.new(-707.280029,246.219849,751.109802)
+			}
+		}
+
+		Remote:FireServer(unpack(Arguments))
+		wait()
+		local Remote = game.ReplicatedStorage['RemoteEvent']
+
+		local Arguments = {
+			[1] = {
+				[1] = "Skill_Punch",
+				[2] = "Left",
+				[3] = Vector3.new(-707.280029,246.219849,751.109802)
+			}
+		}
+
+		Remote:FireServer(unpack(Arguments))
+	end
+end)
+
+H.MouseButton1Click:Connect(function()
+	if game.PlaceId ~= 2202352383 then
+		return
+	end
+	while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetService("Players").LocalPlayer or
+		not game:GetService("Players").LocalPlayer.PlayerGui do
+		wait()
+	end
+	_G.FF = true
+	local UIS = game:GetService("UserInputService")
+
+	UIS.InputBegan:Connect(
+		function(input, isTyping)
+			if isTyping then
+				return
+			elseif input.KeyCode == Enum.KeyCode.F5 then
+				while _G.FF do
+					task.wait()
+					game.Lighting.Blur.Enabled = false
+					game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+					game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+					game.Players.LocalPlayer.Character.ForceField:remove()
+				end
+			end
+		end
+	)
+
+	while task.wait() do
+		game.Lighting.Blur.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+		pcall(
+			function()
+				if
+					game.Players.LocalPlayer.Character.Humanoid.Health <
+					game.Players.LocalPlayer.Character.Humanoid.MaxHealth * .99
+				then
+					local j = game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()
+
+					game.Players.LocalPlayer.Character:Destroy()
+					wait()
+					game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+					task.wait(2.15)
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+					wait()
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+					wait()
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+				end
+			end
+		)
+	end
+end)
+
+sf.MouseButton1Click:Connect(function()
+	if game.PlaceId ~= 2202352383 then
+		return
+	end
+	while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetService("Players").LocalPlayer or
+		not game:GetService("Players").LocalPlayer.PlayerGui do
+		wait()
+	end
+	_G.FF = true
+	local UIS = game:GetService("UserInputService")
+
+	UIS.InputBegan:Connect(
+		function(input, isTyping)
+			if isTyping then
+				return
+			elseif input.KeyCode == Enum.KeyCode.F5 then
+				while _G.FF do
+					task.wait()
+					game.Lighting.Blur.Enabled = false
+					game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+					game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+					game.Players.LocalPlayer.Character.ForceField:remove()
+				end
+			end
+		end
+	)
+
+	while task.wait() do
+		game.Lighting.Blur.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+		pcall(
+			function()
+				if
+					game.Players.LocalPlayer.Character.Humanoid.Health <
+					game.Players.LocalPlayer.Character.Humanoid.MaxHealth * .75
+				then
+					local j = game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()
+
+					game.Players.LocalPlayer.Character:Destroy()
+					wait()
+					game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+					task.wait(2.15)
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+					wait()
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+					wait()
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+				end
+			end
+		)
+	end
+end)
+
+fo.MouseButton1Click:Connect(function()
+	if game.PlaceId ~= 2202352383 then
+		return
+	end
+	while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetService("Players").LocalPlayer or
+		not game:GetService("Players").LocalPlayer.PlayerGui do
+		wait()
+	end
+	_G.FF = true
+	local UIS = game:GetService("UserInputService")
+
+	UIS.InputBegan:Connect(
+		function(input, isTyping)
+			if isTyping then
+				return
+			elseif input.KeyCode == Enum.KeyCode.F5 then
+				while _G.FF do
+					task.wait()
+					game.Lighting.Blur.Enabled = false
+					game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+					game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+					game.Players.LocalPlayer.Character.ForceField:remove()
+				end
+			end
+		end
+	)
+
+	while task.wait() do
+		game.Lighting.Blur.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+		pcall(
+			function()
+				if
+					game.Players.LocalPlayer.Character.Humanoid.Health <
+					game.Players.LocalPlayer.Character.Humanoid.MaxHealth * .50
+				then
+					local j = game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()
+
+					game.Players.LocalPlayer.Character:Destroy()
+					wait()
+					game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+					task.wait(2.15)
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+					wait()
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+					wait()
+					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
+				end
+			end
+		)
+	end
+end)
